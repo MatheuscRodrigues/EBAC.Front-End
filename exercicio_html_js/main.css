@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header {
+    padding: 18px;
+    text-align: center;
+    background-color: #B40404;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+}
+
+section .container {
+    max-width: 1366px;
+    margin-top: 10%;
+    margin-left: 30%;
+    width: 100%;
+}
+
+input, button {
+    display: block;
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 8px;
+    resize: none;
+    width: 50%;
+    font-size: 20px;
+}
+
+button {
+    background-color: #B40404;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #810101;
+}
+
+.container{
+    margin: auto;
+}

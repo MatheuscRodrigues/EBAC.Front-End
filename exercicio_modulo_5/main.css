@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header{
+    background-color: #020D1D;
+    color: #C92D18;
+    padding: 12px;
+}
+
+header .container, section .container, footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1{
+    font-family: 'Carter One', cursive;
+    font-size: 48px;
+}
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+header li {
+    display: inline;
+    margin-left: 12px;
+    font-family: 'Marcellus', serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.container li a {
+    text-decoration: none;
+    color:#C92D18
+}
+
+.container li a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    width: 40%;
+}
+
+section .container li{ 
+    display: inline;
+}
+
+section .container {
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.about_brands img {
+    width: 120px;
+    margin-right: 12px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+section .about_text {
+    margin-left: 50px;
+}
+
+section h2 {
+    font-family: 'Marcellus', serif;
+    font-size: 38px;
+    font-weight: bolder;
+    color:#C92D18;
+}
+
+section h3{
+    font-family: 'Marcellus', serif;
+    font-size: 28px;
+    font-weight: bolder;
+    color:#C92D18;
+}
+
+section p{
+    font-family: 'Marcellus', serif;
+    font-size: 20px;
+    padding-top: 12px;
+}
+#contact .container{
+    display: block;
+}
+
+.contact-methods{
+    display: flex;
+    justify-content: space-between;
+}
+
+form input, textarea, button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    margin-top: 12px;
+    padding: 8px;
+    font-family: 'Marcellus', serif;
+    font-size: 18px ;
+}
+::placeholder{
+    font-size: 18px;
+    font-family: 'Marcellus', serif;
+}
+
+form textarea{
+    resize: none;
+    height: 180px;
+}
+
+form button{
+    font-family: 'Marcellus', serif;
+    background-color: #C92D18;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #020D1D;
+}
+
+input:focus, textarea:focus {
+    outline-color: #C92D18;
+}
+
+.social_links img{
+    height: 48px;
+    text-align: justify;
+    margin-top: 12px;
+}
+
+.social_links li{
+    display: inline;
+    margin-right: 8px;
+}
+
+.contact-methods{
+    margin-top: 24px;
+}
+
+.contact-methods p{
+    font-size: 22px;
+}
+
+footer{
+    padding: 1px;
+    background-color:#020D1D;
+    margin-top: 50px;
+}
+
+footer .container h3 {
+    font-family: 'Marcellus', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color:#C92D18;
+}
+
+footer .container {
+    padding: 24px;
+}

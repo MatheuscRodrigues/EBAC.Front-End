@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body > header {
+    background-color: #B40404;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 12px;
+}
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+header li {
+    display: inline;
+}
+.container {
+    width: 1366px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.articles   {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.articles article img {
+    width: 100%;
+    height: 55%;
+}
+.articles article p {
+    width: 100%;
+}
+section {
+    padding: 12px 0;
+}
+section h2 {
+    padding: 10px 0;
+    margin-bottom: 12px;
+    font-size: 30px;
+    background-color: #B40404;
+    color: #FFFFFF;
+    width: 100%;
+    padding-left: 15px;
+}
+.articles article h3 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.articles article a{
+    text-decoration: none;
+}
+.articles article a:hover {
+    text-decoration: underline;
+}
+.articles article a:visited {
+    color: inherit;
+}
+.articles article{
+    width: 30%;
+}
+.links a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.links a:hover{
+    text-decoration: underline;
+}
+.links a{
+    padding: 0  20px;
+}
+#economy_id {
+    background-color:#F6CECE;
+}
+#entertainment_id {  
+    background-color:#F6CECE; 
+}
+header h1{
+    font-size: 50px;
+}
+.articles article header{
+    font-size: 12px;
+}

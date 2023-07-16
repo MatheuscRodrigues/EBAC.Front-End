@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 1366px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #B40404;
+    padding: 12px;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    font-size: 40px;
+}
+
+.container-central {
+    width: 350px;
+    max-width: 100%;
+    margin: auto;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    margin-top: 2px;
+    padding: 4px;
+    
+}
+
+form div {
+    margin-bottom: 30px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+button {
+    width: 100%;
+    padding: 6px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: green;
+    color: #FFF;
+    font-weight: bold;
+}
+
+#nome-error, #email-error, #telefone-error, #CPF-error, #endereco-error, #CEP-error {
+    color: red;
+    font-weight: 100;
+}
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário EBAC</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header>
+            <div class="container">
+                <h1>Formulário EBAC</h1>
+            </div>
+        </header>
+        <section class="formulario">
+            <div class="container container-central">
+                <form>
+                    <div>
+                        <label for="nome">Nome Completo: </label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    <div>
+                        <label for="email">E-mail: </label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="telefone">Contato: </label>
+                        <input type="tel" name="telefone" id="telefone">
+                    </div>
+                    <div>
+                        <label for="CPF">CPF: </label>
+                        <input type="text" name="CPF" id="CPF">
+                    </div>
+                    <div>
+                        <label for="endereco">Endereço Completo: </label>
+                        <input type="text" name="endereco" id="endereco">
+                    </div>
+                    <div>
+                        <label for="CEP">CEP: </label>
+                        <input type="text" name="CEP" id="CEP">
+                    </div>
+                    <div>
+                        <button type="submit">Enviar Formulário</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="./main.js"></script>
+        <script src="./jQueryPlugins/jquery.mask.js"></script>
+        <script src="./jQueryPlugins/jquery.validate.min.js"></script>
+        <script src="./jQueryPlugins/messages_pt_BR.min.js"></script>
+
+
+</body>
+</html>

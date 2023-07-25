@@ -1,0 +1,52 @@
+body{
+    background-color: #F6D8CE;
+}
+
+.container {
+    margin-top: 50px;
+    padding: 50px 0;
+    background-color:#FF4000;
+    border-radius: 100px;
+}
+
+.row {
+    max-width: 600px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.col h2 {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    padding-top: 20px;
+    display: grid;
+    justify-content: center;
+}
+
+form input {
+    max-width: 500px;
+}
+
+.form-check {
+    justify-content: center;
+    padding: 20px 25px;
+}
+
+h2, label {
+    color: #FFF;
+}
+
+label, .btn {
+    font-weight: bold;
+}
+
+.btn {
+    max-width: 200px;
+}
+
+form > label {
+    padding-top: 20px;
+}

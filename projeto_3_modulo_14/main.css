@@ -1,0 +1,53 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#logo_restaurante {
+    max-width: 110px;
+    padding-right: 20px;
+}
+
+.navbar {
+    background-color: #FABC4B;
+}
+
+.nav .nav-link.active {
+    background-color: #56280C;
+    color: #FABC4B;
+    font-weight: bold;
+}
+
+.nav .nav-link, .navbar-brand h1 {
+    color: #56280C;
+    font-weight: bold;
+}
+
+h1, h2, h3, h5 {
+    font-family: 'Pacifico', cursive;
+    color: #56280C;
+}
+
+.segunda-cor {
+    color: #FABC4B;
+}
+
+p {
+    text-align: justify;
+}
+
+.cor-fundo {
+    background-color: #fff5e4;
+}
+
+.cardapio img {
+    border-radius: 8px;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+    color: #56280C;
+}
+
+footer {
+    background-color: #FABC4B;
+}

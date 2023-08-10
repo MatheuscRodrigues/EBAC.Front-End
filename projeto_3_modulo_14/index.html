@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salgadaria da Luana</title>
+
+    <link href="./lib/cdn.jsdelivr.net_npm_bootstrap@5.2.3_dist_css_bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top" id="cabecalho">
+        <div class="container">
+            <div class="navbar-brand d-flex  align-items-center pb-0 pt-0">
+                <img src="./images/logo/logo.jpg" alt="Logo Restaurante" id="logo_restaurante">
+                <h1 class="m-0">Salgadaria da Luana</h1>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item"><a href="#sobre" class="nav-link"><i class="bi bi-info-circle-fill me-2"></i>Sobre o Restaurante</a></li>
+                    <li class="nav-item"><a href="#cardapio" class="nav-link"><i class="bi bi-book-fill me-2"></i>Cardápio</a></li>
+                    <li class="nav-item"><a href="#lojas" class="nav-link"><i class="bi bi-house-heart-fill me-2"></i>Nossas Lojas</a></li>
+                    <li class="nav-item"><a href="#redes-sociais" class="nav-link"><i class="bi bi-globe me-2"></i>Redes Sociais</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+        <section class="carousel" id="sobre">
+            <div class="container">
+                <div class="carousel-slide" data-bs-ride="carousel" id="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img class="d-block w-100" src="./images/carousel/fachada.jpg" alt="">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img class="d-block w-100" src="./images/carousel/sequencia.jpg" alt="">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img class="d-block w-100" src="./images/carousel/ambiente_interno.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sobre pt-3 cor-fundo" data-bs-smooth-scroll="true">
+            <div class="container">
+                <h2 class="pb-1 fw-bold"><i class="bi bi-info-circle-fill me-2"></i>Sobre a <span class="segunda-cor">Salgadaria</span></h2>
+                <div class="row pt-3">
+                <div class="col-md-4">
+                    <h3>Delivey</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit sunt aut repellat. Fugit quo eos obcaecati inventore velit, illo atque, fuga ipsam reprehenderit incidunt fugiat ducimus distinctio recusandae rem!
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Encomendas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi blanditiis fugiat temporibus exercitationem nobis. Suscipit sunt necessitatibus officia dignissimos placeat dolores nam facilis libero tempora nobis ratione, praesentium eius optio?</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Buffet</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque tempore dolorem vitae minus molestias, totam amet iste, dolore sunt at dolor ad, ut nobis? Deserunt rem laborum fugit amet magni!</p>
+                </div>
+            </div>
+            </div>
+        </section>
+    </div>
+
+    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+        <section class="cardapio" id="cardapio" data-bs-smooth-scroll="true">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title fw-bold mb-4 mt-2"><i class="bi bi-book-fill me-2"></i>Nosso <span class="segunda-cor">Cardápio</span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#salgados_fritos" class="nav-link active">Salgados Fritos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#salgados_assados" class="nav-link">Salgados Assados</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#combos" class="nav-link">Combos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#doces" class="nav-link">Doces</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas" class="nav-link">Bebidas</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active " id="salgados_fritos">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/Salgados Fritos/coxinha_creme.jpg" alt="Coxinha creme">
+                                        <h5 class="mt-2">Coxinha Creme</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/Salgados Fritos/palitos_queijo.jpg" alt="Palitos de Queijo">
+                                        <h5 class="mt-2">Palitos de Queijo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/Salgados Fritos/coxinha_creme.jpg" alt="Coxinha creme">
+                                        <h5 class="mt-2">Coxinha Creme</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/Salgados Fritos/palitos_queijo.jpg" alt="Palitos de Queijo">
+                                        <h5 class="mt-2">Palitos de Queijo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/Salgados Fritos/coxinha_creme.jpg" alt="Coxinha creme">
+                                        <h5 class="mt-2">Coxinha Creme</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/Salgados Fritos/palitos_queijo.jpg" alt="Palitos de Queijo">
+                                        <h5 class="mt-2">Palitos de Queijo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="salgados_assados">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/Salgados Assados/esfirra.jpg" alt="Esfirra de Carne">
+                                        <h5 class="mt-2">Esfirra de Carne</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/Salgados Assados/esfirra.jpg" alt="Esfirra de Frango">
+                                        <h5 class="mt-2">Esfirra de Frango</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="combos">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/Combos/buffet_festas.jpg" alt="Salgados Sortidos">
+                                        <h5 class="mt-2">Salgados Sortidos</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/Combos/copo_coxinha.jpg" alt="Coxinha no Copo">
+                                        <h5 class="mt-2">Coxinha no Copo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="doces">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/Doces/churros.jpg" alt="Churros de Chocolate">
+                                        <h5 class="mt-2">Churros de Chocolate</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/Doces/churros.jpg" alt="Churros de Doce de Leite">
+                                        <h5 class="mt-2">Churros de Doce de Leite</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="bebidas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/Bebidas/Coca-cola.jpg" alt="Coca-cola">
+                                        <h5 class="mt-2">Coca-cola 350ml</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/Bebidas/suco.jpg" alt="Suco de Laranja">
+                                        <h5 class="mt-2">Suco de Laranja 500ml</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+        <section class="lojas mt-2 pt-1 cor-fundo" id="lojas" data-bs-smooth-scroll="true">
+            <div class="container">
+                <h2 class="fw-bold pb-1"><i class="bi bi-house-heart-fill me-2"></i>Nossas <span class="segunda-cor">Lojas</span></h2>
+                <div class="row pt-3">
+                    <div class="col-md-4 pt-2">
+                        <h3>Unidade <span class="segunda-cor">Novo Horizonte</span></h3>
+                        <ul class="list-unstyled pb-2">
+                            <li>Endereço: Rua HTML, 123, Bairro Bootstrap</li>
+                            <li>Contato: (XX) X XXXX-XXXX</li>
+                            <li>Horários de Funcionamento: Segunda a Sexta: 09h-18h Sábados: 09h-13h</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Unidade <span class="segunda-cor">Catanduva</span></h3>
+                        <ul class="list-unstyled">
+                            <li>Endereço: Rua HTML, 123, Bairro Bootstrap</li>
+                            <li>Contato: (XX) X XXXX-XXXX</li>
+                            <li>Horários de Funcionamento: Segunda a Sexta: 09h-18h Sábados: 09h-13h</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Unidade <span class="segunda-cor">Irapuã</span></h3>
+                        <ul class="list-unstyled">
+                            <li>Endereço: Rua HTML, 123, Bairro Bootstrap</li>
+                            <li>Contato: (XX) X XXXX-XXXX</li>
+                            <li>Horários de Funcionamento: Segunda a Sexta: 09h-18h Sábados: 09h-13h</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Unidade <span class="segunda-cor">Borborema</span></h3>
+                        <ul class="list-unstyled">
+                            <li>Endereço: Rua HTML, 123, Bairro Bootstrap</li>
+                            <li>Contato: (XX) X XXXX-XXXX</li>
+                            <li>Horários de Funcionamento: Segunda a Sexta: 09h-18h Sábados: 09h-13h</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Unidade <span class="segunda-cor">Itajobi</span></h3>
+                        <ul class="list-unstyled">
+                            <li>Endereço: Rua HTML, 123, Bairro Bootstrap</li>
+                            <li>Contato: (XX) X XXXX-XXXX</li>
+                            <li>Horários de Funcionamento: Segunda a Sexta: 09h-18h Sábados: 09h-13h</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+        <section class="redes-sociais mt-2" id="redes-sociais" data-bs-smooth-scroll="true">
+            <div class="container">
+                <h2 class="fw-bold pb-1"><i class="bi bi-globe me-2"></i>Redes <span class="segunda-cor">Sociais</span></h2>
+                <div class="row pt-3">
+                    <div class="col-md-4 text-center">
+                        <h3 class="pt-2"><a href="#"><i class="pe-2 bi bi-whatsapp"></i>Whats<span class="segunda-cor">App</span></a></h3>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h3 class="pt-2"><a href="#"><i class="pe-2 bi bi-instagram"></i>Inst<span class="segunda-cor">gram</span></a></h3>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h3 class="pt-2"><a href="#"><i class="pe-2 bi bi-facebook"></i>Face<span class="segunda-cor">book</span></a></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="mt-4 mb-1 p-3">
+        <div class="container">
+            <h5 class="m-0">© Salgadaria da Luana - Todos os direitos reservados - 2023</h5>
+        </div>
+    </footer>
+
+    <script src="./lib/cdn.jsdelivr.net_npm_bootstrap@5.2.3_dist_js_bootstrap.bundle.min.js"></script>
+</body>
+</html>

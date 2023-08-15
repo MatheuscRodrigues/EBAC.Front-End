@@ -16,11 +16,11 @@
 <body>
     <header class="navbar navbar-expand-lg sticky-top" id="cabecalho">
         <div class="container">
-            <div class="navbar-brand d-flex  align-items-center pb-0 pt-0">
+            <div class="navbar-brand d-flex align-items-center pb-0 pt-0">
                 <img src="./images/logo/logo.jpg" alt="Logo Restaurante" id="logo_restaurante">
-                <h1 class="m-0">Salgadaria da Luana</h1>
+                <h1 class="nome_restaurante m-0">Salgadaria da Luana</h1>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+            <button class="navbar-toggler botao-nav" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
@@ -28,13 +28,13 @@
                     <li class="nav-item"><a href="#sobre" class="nav-link"><i class="bi bi-info-circle-fill me-2"></i>Sobre o Restaurante</a></li>
                     <li class="nav-item"><a href="#cardapio" class="nav-link"><i class="bi bi-book-fill me-2"></i>Cardápio</a></li>
                     <li class="nav-item"><a href="#lojas" class="nav-link"><i class="bi bi-house-heart-fill me-2"></i>Nossas Lojas</a></li>
-                    <li class="nav-item"><a href="#contatos" class="nav-link"><i class="bi bi-globe me-2"></i>Redes Sociais</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link"><i class="bi bi-send-fill me-2"></i>Fale Conosco</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div data-bs-spy="scroll" data-bs-target="#cabecalho"  data-bs-smooth-scroll="true">
+    <div data-bs-spy="scroll" data-bs-target="#menu-navegacao" data-bs-smooth-scroll="true">
         <section class="carousel" id="sobre">
             <div class="container">
                 <div class="carousel slide" data-bs-ride="carousel" id="carousel">
@@ -73,9 +73,7 @@
             </div>
             </div>
         </section>
-    </div>
 
-    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
         <section class="cardapio" id="cardapio">
             <div class="container">
                 <div class="row">
@@ -188,9 +186,7 @@
                 </div>
             </div>
         </section>
-    </div>
 
-    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
         <section class="lojas mt-2 pt-1 cor-fundo" id="lojas">
             <div class="container">
                 <h2 class="fw-bold pb-1"><i class="bi bi-house-heart-fill me-2"></i>Nossas <span class="segunda-cor">Lojas</span></h2>
@@ -199,7 +195,7 @@
                         <h3>Unidade <span class="segunda-cor">Novo Horizonte</span></h3>
                         <ul class="list-unstyled pb-2">
                             <li>Endereço: Rua HTML, 123, Bairro Bootstrap</li>
-                            <li>Contato: (XX) X XXXX-XXXX</li>
+                            <li>Contato <i class="pe-1 bi bi-whatsapp"></i>: (XX) X XXXX-XXXX</li>
                             <li>Horários de Funcionamento: Segunda a Sexta: 09h-18h Sábados: 09h-13h</li>
                         </ul>
                     </div>
@@ -207,7 +203,7 @@
                         <h3>Unidade <span class="segunda-cor">Catanduva</span></h3>
                         <ul class="list-unstyled">
                             <li>Endereço: Rua HTML, 123, Bairro Bootstrap</li>
-                            <li>Contato: (XX) X XXXX-XXXX</li>
+                            <li>Contato <i class="pe-1 bi bi-whatsapp"></i>: (XX) X XXXX-XXXX</li>
                             <li>Horários de Funcionamento: Segunda a Sexta: 09h-18h Sábados: 09h-13h</li>
                         </ul>
                     </div>
@@ -215,7 +211,7 @@
                         <h3>Unidade <span class="segunda-cor">Irapuã</span></h3>
                         <ul class="list-unstyled">
                             <li>Endereço: Rua HTML, 123, Bairro Bootstrap</li>
-                            <li>Contato: (XX) X XXXX-XXXX</li>
+                            <li>Contato <i class="pe-1 bi bi-whatsapp"></i>: (XX) X XXXX-XXXX</li>
                             <li>Horários de Funcionamento: Segunda a Sexta: 09h-18h Sábados: 09h-13h</li>
                         </ul>
                     </div>
@@ -223,7 +219,7 @@
                         <h3>Unidade <span class="segunda-cor">Borborema</span></h3>
                         <ul class="list-unstyled">
                             <li>Endereço: Rua HTML, 123, Bairro Bootstrap</li>
-                            <li>Contato: (XX) X XXXX-XXXX</li>
+                            <li>Contato <i class="pe-1 bi bi-whatsapp"></i>: (XX) X XXXX-XXXX</li>
                             <li>Horários de Funcionamento: Segunda a Sexta: 09h-18h Sábados: 09h-13h</li>
                         </ul>
                     </div>
@@ -231,40 +227,71 @@
                         <h3>Unidade <span class="segunda-cor">Itajobi</span></h3>
                         <ul class="list-unstyled">
                             <li>Endereço: Rua HTML, 123, Bairro Bootstrap</li>
-                            <li>Contato: (XX) X XXXX-XXXX</li>
+                            <li>Contato <i class="pe-1 bi bi-whatsapp"></i>: (XX) X XXXX-XXXX</li>
                             <li>Horários de Funcionamento: Segunda a Sexta: 09h-18h Sábados: 09h-13h</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
 
-    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true" id="contatos">
-        <section class="redes-sociais mt-2">
+        <section class="contato mt-2" id="contato">
             <div class="container">
-                <h2 class="fw-bold pb-1"><i class="bi bi-globe me-2"></i>Redes <span class="segunda-cor">Sociais</span></h2>
+                <h2 class="fw-bold pb-1"><i class="bi bi-send-fill me-2"></i>Fale <span class="segunda-cor">Conosco</span></h2>
                 <div class="row pt-3">
-                    <div class="col-md-4 text-center">
-                        <h3 class="pt-2"><a href="#"><i class="pe-2 bi bi-whatsapp"></i>Whats<span class="segunda-cor">App</span></a></h3>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <h3 class="pt-2"><a href="#"><i class="pe-2 bi bi-instagram"></i>Inst<span class="segunda-cor">gram</span></a></h3>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <h3 class="pt-2"><a href="#"><i class="pe-2 bi bi-facebook"></i>Face<span class="segunda-cor">book</span></a></h3>
+                    <div class="col-md-6">
+                        <form>
+                            <div>
+                                <label id="inputs" class="form-label fs-5 mb-1" fo3="#nome">Nome:</label>
+                                <input class="form-control" type="text" id="nome" required>
+                            </div>
+                            <div>
+                                <label id="inputs" class="form-label fs-5 mb-1 mt-3" for="#email">E-mail:</label>
+                                <input class="form-control" type="email" id="email" required>
+                            </div>
+                            <div>
+                                <label id="inputs" class="form-label fs-5 mb-1 mt-3" for="#celular">Celular:</label>
+                                <input class="form-control" type="tel number" step="1" id="celular" required>
+                            </div>
+                            <div>
+                                <label id="inputs" class="form-label fs-5 mb-1 mt-3" for="#assunto">Assunto:</label>
+                                <select class="form-select" name="assunto" id="assunto">
+                                    <option value="" disabled selected>Selecione uma opção</option>
+                                    <option value="1">Seja um Franqueado</option>
+                                    <option value="2">Encomendas para Festas</option>
+                                    <option value="1">Orçamento Buffet</option>
+                                    <option value="1">Outros...</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label id="inputs" class="form-label fs-5 mb-1 mt-3" for="#suamensagem">Mensagem: </label>
+                                <textarea class="form-control" rows="8" name="suamensagem" id="suamensagem"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" id="inputs" class="btn btn-primary fs-5 mt-2 btn-submit">Enviar</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-
-    <footer class="mt-4 mb-0 p-3">
-        <div class="container">
+    
+    <footer class="mt-4 mb-0 p-1">
+        <div class="container d-flex justify-content-between align-items-center">
             <h5 class="m-0">© Salgadaria da Luana - Todos os direitos reservados - 2023</h5>
+            <nav>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a class="nav-link p-1" href="#"><i class="pe-2 bi bi-facebook fs-3"></i></a></li>
+                    <li class="nav-item"><a class="nav-link p-1" href="#"><i class="pe-2 bi bi-instagram fs-3"></i></a></li>
+                </ul>
+            </nav>
         </div>
     </footer>
 
     <script src="./lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="./main.js"></script>
+    <script src="./lib/jquery.mask.js"></script>
 </body>
 </html>

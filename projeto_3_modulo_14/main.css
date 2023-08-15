@@ -22,7 +22,7 @@ body {
     font-weight: bold;
 }
 
-h1, h2, h3, h5 {
+h1, h2, h3, h5 ,#inputs {
     font-family: 'Pacifico', cursive;
     color: #56280C;
 }
@@ -43,11 +43,54 @@ p {
     border-radius: 8px;
 }
 
-.redes-sociais a {
+.contato a {
     text-decoration: none;
     color: #56280C;
 }
 
 footer {
     background-color: #FABC4B;
+}
+
+.contato textarea {
+    resize: none;
+    max-height: 500px;
+    height: 100%;
+}
+
+.btn-submit {
+    background-color: #FABC4B;
+    border-color: #FABC4B;
+}
+
+.btn-submit:hover {
+    background-color: #56280C;
+    border-color: #56280C;
+}
+
+@media (max-width: 767px) {
+    
+    body{
+        overflow-x: hidden;
+    }
+
+    #logo_restaurante {
+        width: 25%;
+    }
+
+    .nome_restaurante {
+        font-size: 20px;
+    }
+
+    header {
+        display: flex;
+    }
+
+    .botao-nav {
+        width: 15%;
+    }
+
+    footer h5 {
+        font-size: 10px;
+    }
 }

@@ -1,0 +1,70 @@
+@use 'variables';
+@use 'hero';
+@use 'about';
+@use 'cast';
+@use 'footer';
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../assets/fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../assets/fonts/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: variables.$backgroundColor;
+    font-family: Roboto, sans-serif;
+}
+
+@mixin title ($fontSize: 40px) {
+    font-size: $fontSize;
+    color: variables.$titleColor;
+}
+
+@mixin text ($fontSize: 20px) {
+    @include title($fontSize);
+    color: variables.$textColor;
+}
+
+.title {
+    @include title;
+
+    @media (max-width: 768px) {
+        @include title(30px)
+    }
+}
+
+.title--sm {
+    @include title(30px);
+}
+
+.title--bg {
+    @include title(50px);
+}
+
+.text {
+    @include text;
+
+    @media (max-width: 768px) {
+        @include text(15px)
+    }
+}
+
+.text--sm {
+    @include text(15px)
+}
+
+.text--bg {
+    @include text(25px)
+}

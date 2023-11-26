@@ -1,0 +1,82 @@
+@use 'variaveis';
+@use 'hero';
+@use 'shows';
+@use 'plans';
+@use 'utilization';
+@use 'devices';
+@use 'faq';
+@use 'footer';
+@use 'header';
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Bold.woff2);
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: variaveis.$bgColor;
+    font-family: Avenir, sans-serif;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$textColor;
+}
+
+@mixin title($fontSize: 40px) {
+    @include text($fontSize);
+    color: variaveis.$titleColor;
+}
+
+.text--bg {
+    @include text(18px);
+}
+
+.text {
+    @include text;
+}
+
+.text--sm {
+    @include text(12px);
+}
+
+.title--bg {
+    @include title(44px)
+}
+
+.title {
+    @include title;
+
+    @media(max-width: 768px) {
+        @include title(24px)
+    }
+}
+
+.title--sm {
+    @include title(28px);
+
+    @media(max-width: 768px) {
+        @include title(22px)
+    }
+}
+
+.link-text {
+    @include text(18px);
+    color: variaveis.$titleColor;
+    text-decoration: underline;
+    cursor: pointer;
+}

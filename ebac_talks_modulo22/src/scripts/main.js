@@ -20,6 +20,7 @@ const eventTime = setInterval(function() {
     document.getElementById('counter').innerHTML = `O maior evento de tecnologia do Brasil começa em ${daysForEvent}d ${hoursForEvent}h ${minutesForEvent}m ${secondsForEvent}s`
 
     if(timeOfEvent < 0) {
+        clearInterval(eventTime);
         document.querySelector('#counter').innerHTML = 'Em breve novas datas para o maior evento de tecnlogia do Brasil. Aguarde!';
         document.querySelector('.hero__info').classList.add('hero__info--afterEvent');
     }

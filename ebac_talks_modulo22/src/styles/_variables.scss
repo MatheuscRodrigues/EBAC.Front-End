@@ -1,0 +1,28 @@
+$primaryColorText: #FFF;
+$secondColorText: #000;
+
+$buttonBgColor: #4F2AC3;
+
+$inofBgColor: #FFF;
+$primaryBgColor: #000;
+
+
+.--gradientOne{
+    background-image: linear-gradient(#1B6CA7, #442BDB);
+    
+}
+
+.--gradientTwo{
+    background-image: linear-gradient(#442BDB, #89223B);
+    
+}
+
+.--gradientThree{
+    background-image: linear-gradient(#89223B, #9C791D);
+    
+}
+
+.--gradientFour{
+    background-image: linear-gradient(#9C791D, #89223B);
+    
+}

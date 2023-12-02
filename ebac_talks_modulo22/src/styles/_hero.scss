@@ -1,0 +1,107 @@
+@use 'variables';
+
+.hero {
+    padding-top: 64px;
+    padding-bottom: 100px;
+    position: relative;
+
+    background-image: url(../images/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container {
+        position: relative;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: variables.$primaryBgColor;
+        content: '';
+        opacity: .7;
+    }
+
+    &__text {
+        margin-top: 64px;
+        margin-bottom: 64px;
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 56px;
+        text-align: center;
+    }
+    
+    &__logo {
+        display: block;
+        margin: 0 auto;
+        height: 80px;
+    }
+
+    &__info {
+        width: 100%;
+        background-color: variables.$inofBgColor;
+        padding: 16px;
+        border: solid 2px variables.$buttonBgColor;
+        border-radius: 8px;
+
+        &--afterEvent {
+            display: none;
+        }
+
+        &__list {
+            list-style-type: none;
+            display: flex;
+            gap: 24px;
+            justify-content: space-between;
+            align-items: center;
+
+            li, b {
+                display: block;
+                color: variables.$secondColorText;
+                text-align: center;
+
+                button {
+                    background-color: variables.$buttonBgColor;
+                    padding: 12px;
+                    font-size: 15px;
+                    border: none;
+                    border-radius: 8px;
+                    white-space: nowrap;
+
+                    &:hover {
+                        cursor: pointer;
+                        opacity: .9;
+                    }
+                }
+            }
+        }
+
+    }
+
+    @media (max-width: 768px) {
+
+        padding: 40px 0;
+        &__logo {
+            height: 45px
+        };
+
+        &__text {
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
+
+        &__info {
+            
+            &__list {
+            display: block;
+
+
+            li, b {
+                padding: 8px;
+            }
+        }
+    }}
+}

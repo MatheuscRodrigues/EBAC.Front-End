@@ -1,0 +1,58 @@
+.event {
+
+    padding: 80px 0;
+
+    .container {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__detail {
+
+        &__title {
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+
+        &__text {
+            line-height: 22px;
+            text-align: justify;
+            font-weight: 400;
+        }
+    }
+
+    &__image__source {
+        max-width: 360px;
+        border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+
+        .container {
+            display: block;
+        }
+
+        &__detail {
+
+            &__title {
+                text-align: center;
+            }
+
+            &__text {
+                margin: 0 auto;
+            }
+        }
+
+        &__image {
+            display: flex;
+            justify-content: center;
+            
+            &__source {
+                width: 100%;
+                margin-top: 16px;
+
+            }
+        }
+    }
+}

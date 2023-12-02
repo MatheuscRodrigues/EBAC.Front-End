@@ -1,0 +1,24 @@
+@use 'variables';
+@use 'hero';
+@use 'event';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: variables.$primaryColorText;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+        width: 80%;
+    }
+    @media (max-width: 1024px) {
+        width: 90%;
+    }
+}

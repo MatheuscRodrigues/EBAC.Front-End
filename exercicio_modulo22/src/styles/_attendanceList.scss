@@ -1,0 +1,68 @@
+@use "variables";
+
+.attendanceList {
+  &__title {
+    text-align: center;
+    padding-bottom: 30px;
+
+    @media (max-width: 768px) {
+      margin-top: 30px;
+      padding-bottom: 15px;
+    }
+  }
+
+  &__form {
+    display: grid;
+    justify-content: center;
+    padding-bottom: 120px;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+
+    label {
+      display: inline-block;
+      width: 120px;
+      margin-bottom: 25px;
+
+      @media (max-width: 768px) {
+        margin: 20px 0 10px 0;
+      }
+    }
+
+    button {
+      display: flex;
+      margin: 0 auto;
+      padding: 12px;
+      font-size: 22px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      background-color: variables.$buttonColor;
+
+      @media (max-width: 768px) {
+        margin-top: 50px;
+      }
+
+      &:hover {
+        background-color: variables.$buttonHover;
+        cursor: pointer;
+      }
+    }
+
+    #name {
+      padding: 4px;
+      width: 420px;
+      color: #000;
+      @media (max-width: 768px) {
+        width: 250px;
+      }
+    }
+
+    #contact {
+      padding: 4px;
+      width: 250px;
+      color: #000;
+    }
+  }
+}

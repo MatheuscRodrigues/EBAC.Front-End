@@ -1,0 +1,8 @@
+$primaryTextColor: #fff;
+$primaryBgColor: #000;
+$buttonColor: #d3690f;
+$buttonHover: #b25407;
+
+.--gradient {
+  background-image: linear-gradient($buttonColor, $primaryBgColor);
+}

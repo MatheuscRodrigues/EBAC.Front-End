@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aniversário do Matheus</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./styles/main.scss" />
+  </head>
+  <body class="--gradient">
+    <header class="hero">
+      <div class="container">
+        <h1 class="hero__title">
+          Você está sendo convidado para meu aniversário! Venha comigo comemorar
+          essa data tão especial.
+        </h1>
+        <h2 class="hero__subtitle">
+          Faltam <span id="counter"></span> para a festa que irá ficar na
+          história
+        </h2>
+        <a href="#attendanceList"
+          ><button class="hero__button">Confirmar Presença</button></a
+        >
+      </div>
+    </header>
+    <section class="event">
+      <div class="container" data-aos="zoom-in">
+        <div class="event__image">
+          <img
+            src="./images/atracao.jpg"
+            alt="Atração"
+            class="event__image__content"
+          />
+        </div>
+        <div class="event__info">
+          <h3 class="event__info__title">Atrações</h3>
+          <p class="event__info__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            fugit rerum hic, tenetur sequi ex dignissimos adipisci, voluptates,
+            veritatis voluptate eligendi repellat esse debitis quam dolor
+            quibusdam. Quo, repellat cumque. Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Facilis, maxime quod! Ratione
+            inventore incidunt officiis obcaecati sint aperiam porro nesciunt
+            eum provident? Ipsa molestiae dolorum, nostrum possimus esse quaerat
+            quos.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="event">
+      <div class="container" data-aos="zoom-in">
+        <div class="event__info">
+          <h3 class="event__info__title">Localização</h3>
+          <p class="event__info__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            fugit rerum hic, tenetur sequi ex dignissimos adipisci, voluptates,
+            veritatis voluptate eligendi repellat esse debitis quam dolor
+            quibusdam. Quo, repellat cumque. Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Facilis, maxime quod! Ratione
+            inventore incidunt officiis obcaecati sint aperiam porro nesciunt
+            eum provident? Ipsa molestiae dolorum, nostrum possimus esse quaerat
+            quos.
+          </p>
+        </div>
+        <div class="event__image">
+          <img
+            src="./images/local.jpg"
+            alt="Atração"
+            class="event__image__content"
+          />
+        </div>
+      </div>
+    </section>
+    <div class="attendanceList" id="attendanceList">
+      <div class="container">
+        <h1 class="attendanceList__title">Confirme sua presença</h1>
+        <form class="attendanceList__form">
+          <div class="attendanceList__form__name">
+            <label for="#name">Nome Completo</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Digite seu nome completo"
+              required
+            />
+          </div>
+          <div class="attendanceList__form__contact">
+            <label for="#contact">Celular</label>
+            <input
+              type="tel"
+              id="contact"
+              placeholder="Insira seu celular com DDD"
+              required
+            />
+          </div>
+          <button type="submit">Inserir nome na lista</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

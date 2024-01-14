@@ -30,5 +30,9 @@ document.addEventListener("DOMContentLoaded", function () {
       //Link perfil
       profileLink.target = "_blank";
       profileLink.href = reply.html_url;
+    })
+    //Catch para verificar qualquer tipo de erro que possa vir ocorrer
+    .catch(function (error) {
+      console.error("Erro: ", error.mensage);
     });
 });
